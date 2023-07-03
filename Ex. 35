@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Maior e menor
+// Atividade realizada em 27/02/2023
+
+int main()
+{
+    int v[5];
+    int maior = 0;
+    int menor = 999999999;
+    
+    printf("Digite 5 valores inteiros e positivos: \n");
+    
+    for(int i=0; i <5; i++)
+    {
+        scanf("%d", &v[i]);
+        
+        if(v[i] > maior){
+            maior = v[i];
+        }
+        if(v[i] < menor){
+            menor = v[i];
+        }
+    }
+    
+    printf("O maior valor é: %d e o menor é: %d", maior, menor);
+    
+    return 0;
+}
+
