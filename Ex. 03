@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+/* 3) Escreva um programa que coloque na tela meia arvore de natal com asteriscos.
+O numero de ramos deverá ser introduzido pelo usuário */
+
+int main()
+{
+    int ramos = 0;
+    int i = 0;
+    int contador = 1;
+    
+    printf("Olá, informe o número de ramos\n");
+    scanf("%d", &ramos);
+    
+    for (i = 0; i < ramos; i++)
+    {
+        for (contador = 1; contador <= 2*i + 1; contador+= 2)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
+
