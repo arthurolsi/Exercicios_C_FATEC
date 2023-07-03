@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Soma dos positivos
+
+int main()
+{
+    int vetorA[10], qtdN = 0, somaPositivos = 0;
+    int i = 0;
+    
+    printf("Digite 10 valores para o vetor\n");
+    for (i = 0; i < 10; i++){
+        scanf("%d", &vetorA[i]);
+        
+        if (vetorA[i] < 0){
+            qtdN++;
+        }
+        else{
+            somaPositivos = somaPositivos + vetorA[i];
+        }
+    }
+    
+    printf("\n%d Número(s) negativo(s) digitados: ", qtdN);
+    
+    printf("\nA soma dos números positivos é: ");
+    printf("%d", somaPositivos);
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
