@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+// Frutas
+// Atividade realizada em 06/03/2023
+
+int main()
+
+{
+    int fruta;
+    printf("Informe o codigo da fruta: ");
+    scanf("\n %d", &fruta);
+
+
+    switch(fruta)
+    {
+    case 1:
+        printf("Maça - R$100,00\n");
+        break;
+    case 2:
+        printf("Pessego - R$50,00\n");
+        break;
+    case 3:
+        printf("Laranja - R$1,99\n");
+        break;
+    case 4:
+        printf("Melancia - R$5,98\n");
+        break;
+    case 5:
+        printf("Abacaxi - R$500,00\n");
+        break;
+    case 6:
+        printf("Maracuja - R$250,00\n");
+        break;
+    case 7:
+        printf("Mamao - R$120,00\n");
+        break;
+    case 8:
+        printf("Abacate - R$10,00\n");
+        break;
+    case 9:
+        printf("Tomate - R$1000,00\n");
+        break;
+    default:
+        break;
+    }
+
+    return 0;
+
+}
