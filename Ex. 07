@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 2) Construir um algoritmo que escreva os 30 primeiros números primos {2,3,5,7,11,13,19,...}
+// Atividade realizada em 11/05/2022
 
 int main()
 {
