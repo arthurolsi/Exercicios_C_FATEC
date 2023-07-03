@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+// Proposta: Calcular o imposto de renda retido na fonte(IRRF)mensalmente de um grupo de contribuintes
+// Atividade realizada em 19/05/2022
+
+int main()
+{
+    int CPF, numDependentes;
+    float salario, desconto, valorDependentes, baseParaIRRF, valorFinal, descontoIRRF = 0;
+
+    printf("Informe seu CPF\n");
+    scanf("%d", &CPF);
+    printf("Informe o número de dependentes\n");
+    scanf("%d", &numDependentes);
+    printf("Informe sua renda mensal\n");
+    scanf("%f", &salario);
+    
+    if (salario <= 1212){
+        desconto = salario * 0.075;
+    }
+    else if (salario > 1212 && salario <= 2427.35){
+        desconto = (salario * 0.09) - 18.18;
+    }
+    else if (salario >= 2427.36 && salario <= 3641.03){
+        desconto = (salario * 0.12) - 91;
+    }
+    else if (salario >= 3641.04 && salario <= 7087.22){
+        desconto = (salario * 0.14) - 163.82;
+    }
+    else{
+        desconto = 828.38;
+    }
+    
+    valorDependentes = 189.59 * numDependentes;
+    baseParaIRRF = salario - desconto - valorDependentes;
+    
+    // IRRF
+    
+    if (baseParaIRRF <= 1903.98){
+        valorFinal = salario - desconto;
+    }
+    else if (baseParaIRRF >= 1903.99 && baseParaIRRF <= 2826.65){
+        descontoIRRF = (baseParaIRRF * 0.075) - 142.80;
+    }
+    else if (baseParaIRRF >= 2826.66 && baseParaIRRF <= 3751.05){
+        descontoIRRF = (baseParaIRRF * 0.15) - 354.80;
+    }
+    else if (baseParaIRRF >= 3751.06 && baseParaIRRF <= 4664.68){
+        descontoIRRF = (baseParaIRRF * 0.225) - 636.13;
+    }
+    else{
+        descontoIRRF = (baseParaIRRF * 0.275) - 869.36;
+    }
+    
+    valorFinal = salario - desconto - descontoIRRF;
+    
+    printf("\nPara o CPF número %d", CPF);
+    printf("\nO desconto do INSS é de R$: %.2f", desconto);
+    printf("\nO resultado do cálculo de dependentes é de R$: %.2f", valorDependentes);
+    printf("\nO salário BASE é de R$: %.2f", baseParaIRRF);
+    printf("\nO salário FINAL é de R$: %.2f", valorFinal);
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
+
+
+
