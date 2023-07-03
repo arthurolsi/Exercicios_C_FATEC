@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Soma com function
+// Atividade realizada em 18/05/2022
 
 int soma(int a, int b){
     int x;
