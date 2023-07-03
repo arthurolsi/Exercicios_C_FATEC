@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Trocar variáveis com function
+// Atividade realizada em 18/05/2022
 
 int trocarA(int a, int b){
     int c = a;
