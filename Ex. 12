@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// Trocar variáveis com function
+
+int trocarA(int a, int b){
+    int c = a;
+    a = b;
+    b = c;
+    return a;
+}
+
+int trocarB(int a, int b){
+    int c = a;
+    a = b;
+    b = c;
+    return b;
+}
+
+int main()
+{
+    int numA = 10, numB = 20;
+    int numC = numA;
+    printf("%d %d", numA, numB);
+    
+    numA = trocarA(numA, numB);
+    numB = trocarB(numC, numB);
+
+    
+    printf("\n%d %d", numA, numB);
+    return 0;
+}
+
