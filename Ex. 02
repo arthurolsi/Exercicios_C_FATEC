@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 2) Fazer um programa que mostre os 10 primeiros numeros pares
+// Atividade realizada em 10/05/2022
 
 int main()
 {
