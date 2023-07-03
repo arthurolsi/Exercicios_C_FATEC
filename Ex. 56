@@ -1,0 +1,174 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Struct Funcionários 
+// Atividade realizada em 28/03/2023
+
+typedef struct{
+ char nome[100];
+ int idade;
+ char sexo[10];
+ int cpf;
+ char nacionalidade[100];
+ char cargo[100];
+ char email[100];
+ int numCel;
+ char turno[100];
+ char tipoSangue[100];
+ 
+}Funcionario1, Funcionario2, Funcionario3, Funcionario4, Funcionario5;
+
+
+
+int main()
+{
+    
+    Funcionario1 funcionario1;
+    Funcionario2 funcionario2;
+    Funcionario3 funcionario3;
+    Funcionario4 funcionario4;
+    Funcionario5 funcionario5;
+    
+    printf("DADOS PARA O FUNCIONÁRIO 1: \n");
+    printf("Nome: ");
+    scanf("%s", funcionario1.nome);
+    printf("Idade: ");
+    scanf("%d", &funcionario1.idade);
+    printf("Sexo: ");
+    scanf("%s", funcionario1.sexo);
+    printf("CPF: ");
+    scanf("%d", &funcionario1.cpf);
+    printf("Nacionalidade: ");
+    scanf("%s", funcionario1.nacionalidade);
+    printf("Cargo: ");
+    scanf("%s", funcionario1.cargo);
+    printf("Email: ");
+    scanf("%s", funcionario1.email);
+    printf("Número de telefone: ");
+    scanf("%d", &funcionario1.numCel);
+    printf("Turno: ");
+    scanf("%s", funcionario1.turno);
+    printf("Tipo sanguíneo: ");
+    scanf("%s", funcionario1.tipoSangue);
+    
+    printf("\nDADOS PARA O FUNCIONÁRIO 2: \n");
+    printf("Nome: ");
+    scanf("%s", funcionario2.nome);
+    printf("Idade: ");
+    scanf("%d", &funcionario2.idade);
+    printf("Sexo: ");
+    scanf("%s", funcionario2.sexo);
+    printf("CPF: ");
+    scanf("%d", &funcionario2.cpf);
+    printf("Nacionalidade: ");
+    scanf("%s", funcionario2.nacionalidade);
+    printf("Cargo: ");
+    scanf("%s", funcionario2.cargo);
+    printf("Email: ");
+    scanf("%s", funcionario2.email);
+    printf("Número de telefone: ");
+    scanf("%d", &funcionario2.numCel);
+    printf("Turno: ");
+    scanf("%s", funcionario2.turno);
+    printf("Tipo sanguíneo: ");
+    scanf("%s", funcionario2.tipoSangue);
+    
+    printf("\nDADOS PARA O FUNCIONÁRIO 3: \n");
+    printf("Nome: ");
+    scanf("%s", funcionario3.nome);
+    printf("Idade: ");
+    scanf("%d", &funcionario3.idade);
+    printf("Sexo: ");
+    scanf("%s", funcionario3.sexo);
+    printf("CPF: ");
+    scanf("%d", &funcionario3.cpf);
+    printf("Nacionalidade: ");
+    scanf("%s", funcionario3.nacionalidade);
+    printf("Cargo: ");
+    scanf("%s", funcionario3.cargo);
+    printf("Email: ");
+    scanf("%s", funcionario3.email);
+    printf("Número de telefone: ");
+    scanf("%d", &funcionario3.numCel);
+    printf("Turno: ");
+    scanf("%s", funcionario3.turno);
+    printf("Tipo sanguíneo: ");
+    scanf("%s", funcionario3.tipoSangue);
+    
+    printf("\nDADOS PARA O FUNCIONÁRIO 4: \n");
+    printf("Nome: ");
+    scanf("%s", funcionario4.nome);
+    printf("Idade: ");
+    scanf("%d", &funcionario4.idade);
+    printf("Sexo: ");
+    scanf("%s", funcionario4.sexo);
+    printf("CPF: ");
+    scanf("%d", &funcionario4.cpf);
+    printf("Nacionalidade: ");
+    scanf("%s", funcionario4.nacionalidade);
+    printf("Cargo: ");
+    scanf("%s", funcionario4.cargo);
+    printf("Email: ");
+    scanf("%s", funcionario4.email);
+    printf("Número de telefone: ");
+    scanf("%d", &funcionario4.numCel);
+    printf("Turno: ");
+    scanf("%s", funcionario4.turno);
+    printf("Tipo sanguíneo: ");
+    scanf("%s", funcionario4.tipoSangue);
+    
+    printf("\nDADOS PARA O FUNCIONÁRIO 5: \n");
+    printf("Nome: ");
+    scanf("%s", funcionario5.nome);
+    printf("Idade: ");
+    scanf("%d", &funcionario5.idade);
+    printf("Sexo: ");
+    scanf("%s", funcionario5.sexo);
+    printf("CPF: ");
+    scanf("%d", &funcionario5.cpf);
+    printf("Nacionalidade: ");
+    scanf("%s", funcionario5.nacionalidade);
+    printf("Cargo: ");
+    scanf("%s", funcionario5.cargo);
+    printf("Email: ");
+    scanf("%s", funcionario5.email);
+    printf("Número de telefone: ");
+    scanf("%d", &funcionario5.numCel);
+    printf("Turno: ");
+    scanf("%s", funcionario5.turno);
+    printf("Tipo sanguíneo: ");
+    scanf("%s", funcionario5.tipoSangue);
+    
+    printf("\33[40;40m");
+    printf("__________________________________________________________________");
+    printf("\nFUNCIONÁRIO 1: ");
+    printf("\nNome: %s \nIdade: %d\nSexo: %s\nCPF: %d\nNacionalidade: %s\nCargo: %s\nEmail: %s\nNúmero telefone: %d\nTurno: %s\nTipo sanguíneo: %s\n",
+    funcionario1.nome, funcionario1.idade, funcionario1.sexo, funcionario1.cpf, funcionario1.nacionalidade, funcionario1.cargo, funcionario1.email, funcionario1.numCel, funcionario1.turno, funcionario1.tipoSangue);
+    
+    printf("__________________________________________________________________");
+    printf("\nFUNCIONÁRIO 2: ");
+    printf("\nNome: %s \nIdade: %d\nSexo: %s\nCPF: %d\nNacionalidade: %s\nCargo: %s\nEmail: %s\nNúmero telefone: %d\nTurno: %s\nTipo sanguíneo: %s\n",
+    funcionario2.nome, funcionario2.idade, funcionario2.sexo, funcionario2.cpf, funcionario2.nacionalidade, funcionario2.cargo, funcionario2.email, funcionario2.numCel, funcionario2.turno, funcionario2.tipoSangue);
+    
+    printf("__________________________________________________________________");
+    printf("\nFUNCIONÁRIO 3: ");
+    printf("\nNome: %s \nIdade: %d\nSexo: %s\nCPF: %d\nNacionalidade: %s\nCargo: %s\nEmail: %s\nNúmero telefone: %d\nTurno: %s\nTipo sanguíneo: %s\n",
+    funcionario3.nome, funcionario3.idade, funcionario3.sexo, funcionario3.cpf, funcionario3.nacionalidade, funcionario3.cargo, funcionario3.email, funcionario3.numCel, funcionario3.turno, funcionario3.tipoSangue);
+    
+    printf("__________________________________________________________________");
+    printf("\nFUNCIONÁRIO 4: ");
+    printf("\nNome: %s \nIdade: %d\nSexo: %s\nCPF: %d\nNacionalidade: %s\nCargo: %s\nEmail: %s\nNúmero telefone: %d\nTurno: %s\nTipo sanguíneo: %s\n",
+    funcionario4.nome, funcionario4.idade, funcionario4.sexo, funcionario4.cpf, funcionario4.nacionalidade, funcionario4.cargo, funcionario4.email, funcionario4.numCel, funcionario4.turno, funcionario4.tipoSangue);
+    
+    printf("__________________________________________________________________");
+    printf("\nFUNCIONÁRIO 5: ");
+    printf("\nNome: %s \nIdade: %d\nSexo: %s\nCPF: %d\nNacionalidade: %s\nCargo: %s\nEmail: %s\nNúmero telefone: %d\nTurno: %s\nTipo sanguíneo: %s\n",
+    funcionario5.nome, funcionario5.idade, funcionario5.sexo, funcionario5.cpf, funcionario5.nacionalidade, funcionario5.cargo, funcionario5.email, funcionario5.numCel, funcionario5.turno, funcionario5.tipoSangue);
+
+    return 0;
+}
+
+// Arthur Oliveira Silva
+
+
