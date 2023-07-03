@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+// 2) Construir um algoritmo que escreva os 30 primeiros números primos {2,3,5,7,11,13,19,...}
+
+int main()
+{
+    int i = 0;
+    int n = 3;
+    int m = 1;
+    int teste = 0;
+    int contador = 0;
+    
+    printf("Primeiros 30 números primos: ");
+    
+    for (i = 0; contador < 30; i++){
+        if (m > 0){
+            for (i = 1;  i <= m; ++i){
+                if (m % i == 0){
+                    ++teste;
+                }
+            }
+            if (teste == 2){
+                printf("%d-", m);
+                contador++;
+            }
+            teste = 0;
+        }
+        ++m;
+        
+    }
+        
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
+
