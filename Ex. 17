@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+// Par-Impar vetor
+
+int main()
+{
+    int vetorA[10], vetorB[10], vetorC[10];
+    int i = 0;
+    
+    printf("Digite 10 valores para o vetor\n");
+    for (i = 0; i < 10; i++){
+        scanf("%d", &vetorA[i]);
+        
+        if (vetorA[i] % 2 == 0){
+            vetorB[i] = vetorA[i];
+            vetorC[i] = 0;
+        }
+        else{
+            vetorB[i] = 0;
+            vetorC[i] = vetorA[i];
+        }
+    }
+    
+    printf("Números pares: ");
+    for (i = 0; i < 10; i++){
+        printf("%d-", vetorB[i]);
+    }
+    
+   printf("\nNúmeros impares: ");
+    for (i = 0; i < 10; i++){
+        printf("%d-", vetorC[i]);
+    }
+    
+    return 0;
+}
+
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
