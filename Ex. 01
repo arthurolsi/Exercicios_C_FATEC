@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+// 1) Fazer um programa que calcule a soma e o produto dos n primeiros números naturais
+
+int main()
+{
+    int i = 1;
+    int limite = 0;
+    int soma = 0;
+    int multiplicacao = 1;
+    
+    printf("Informe n\n");
+    scanf("%d", &limite);
+    
+    printf("Os números são: \n");
+
+    for (i = 1; i <= limite; i++){
+        soma = i + soma;
+        multiplicacao = i * multiplicacao;
+        printf("%d\n", i);
+    }
+    
+    printf("\nA soma é: \n%d", soma);
+    printf("\nA multiplicação é: \n%d", multiplicacao);
+        
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
+
+
