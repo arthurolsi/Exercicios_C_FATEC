@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// 2) Fazer um programa que mostre os 10 primeiros numeros pares
+
+int main()
+{
+    int i = 0;
+    int contador = 0;
+    
+    printf("Primeiros 10 números pares");
+    
+    for (i = 0; contador < 10; i++)
+    {
+        if (i % 2 == 0)
+        {
+            printf("\n %d", i);
+            contador++;
+        }
+        
+    }
+        
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
