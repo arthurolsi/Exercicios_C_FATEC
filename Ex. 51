@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+// Desafio matriz 6.1
+// Atividade realizada em 06/03/2023
+
+int main()
+{
+    char matriz [10][10];
+    int contador1 = 0;
+    int contador2 = 0;
+    
+    for(contador1 = 0; contador1 <= 9; contador1++){
+        for(contador2 = 0; contador2 <= 9; contador2++){
+           matriz[contador1][contador2] = '-'; 
+        }
+    }
+    
+    matriz[0][0]='X';
+    matriz[0][1]='X';
+    matriz[0][2]='X';
+    matriz[0][3]='X';
+    matriz[0][4]='X';
+    matriz[0][5]='X';
+    matriz[0][6]='X';
+    matriz[0][7]='X';
+    matriz[0][8]='X';
+    matriz[0][9]='X';
+    matriz[1][0]='X';
+    matriz[1][1]='X';
+    matriz[2][0]='X';
+    matriz[2][2]='X';
+    matriz[3][0]='X';
+    matriz[3][3]='X';
+    matriz[4][0]='X';
+    matriz[4][4]='X';
+    matriz[5][0]='X';
+    matriz[5][5]='X';
+    matriz[6][0]='X';
+    matriz[6][6]='X';
+    matriz[7][0]='X';
+    matriz[7][7]='X';
+    matriz[8][0]='X';
+    matriz[8][8]='X';
+    matriz[9][0]='X';
+    matriz[9][9]='X';
+    
+    
+    for(contador1 = 0; contador1 <= 9; contador1++){
+        for(contador2 = 0; contador2 <= 9; contador2++){
+           printf("%c",matriz[contador1][contador2]); 
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
