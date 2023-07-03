@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Struct Músicas
+// Atividade realizada em 27/03/2023
+
+typedef struct{
+ char nome[100];
+ float duracao;
+ char genero[100];
+ char autor[100];
+ char cantor[100];
+ int anoLancamento;
+ char plataformas [100];
+ 
+}Musica;
+
+
+
+int main()
+{
+    Musica musica;
+    
+    
+    
+    strcpy(musica.nome, "Fallen Kingdom");
+    printf("\33[40;43m");
+    
+    musica.duracao = 4.48;
+    strcpy(musica.genero, "Paródia/POP");
+    strcpy(musica.autor, "Captain Sparklez");
+    strcpy(musica.cantor, "TryHardNinja");
+    musica.anoLancamento = 2012;
+    strcpy(musica.plataformas, "YouTube");
+    
+    printf("Nome: %s \nDuração: %.2f\nGênero: %s\nAutor: %s\nCantor: %s\nAno de Lançamento: %d\nPlataformas: %s\n",
+    musica.nome, musica.duracao, musica.genero, musica.autor, musica.cantor, musica.anoLancamento, musica.plataformas);
+    printf("__________________________________________________________________");
+    
+
+    return 0;
+}
+
+// Arthur Oliveira Silva
+
+
