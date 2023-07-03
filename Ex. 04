@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 4)Faça um programa que dado um valor de salário apresente um aumento de 10%
+// Atividade realizada em 10/05/2022
 
 int main()
 {
