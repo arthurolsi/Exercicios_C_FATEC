@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+// Frutas 2
+// Atividade realizada em 06/03/2023
+
+int main()
+{
+    int fruta;
+    
+    printf("Informe o código da fruta: ");
+    scanf("\n %d", &fruta);
+    
+    if(fruta == 1){
+        printf("Maçã\nR$100,00\n");
+    }
+    else if(fruta == 2){
+        printf("Pêssego\nR$50,00\n");
+    }
+    else if(fruta == 3){
+        printf("Laranja\nR$1,99\n");
+    }
+    else if(fruta == 4){
+        printf("Melancia\nR$5,98\n");
+    }
+    else if(fruta == 5){
+        printf("Abacaxi\nR$500,00\n");
+    }
+    else if(fruta == 6){
+        printf("Maracujá\nR$250,00\n");
+    }
+    else if(fruta == 7){
+        printf("Mamão\nR$120,00\n");
+    }
+    else if(fruta == 8){
+        printf("Abacate\nR$10,00\n");
+    }
+    else if(fruta == 9){
+        printf("Tomate\nR$1000,00\n");
+    }
+    else{
+        printf("Inválido!");
+    }
+
+    return 0;
+}
