@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Exemplo VETOR
+
+int main()
+{
+    int i, vetor[5];
+    
+    printf("Digite 5 valores\n");
+    
+    // Inserindo dados em um vetor
+    
+    for (i = 0; i < 5; i++){
+        scanf("%d", &vetor[i]);
+    }
+    
+    // Apresentando os dados
+    for (i = 0; i < 5; i++){
+        printf("%d-", vetor[i]);
+    }
+    
+    return 0;
+}
