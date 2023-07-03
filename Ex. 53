@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Struct colorida
+// Atividade realizada em 27/03/2023
+
+typedef struct{
+ char modelo[100];
+ char marca[100];
+ int ano;
+ char cor[100];
+ char placa[100];
+ char combustivel[100];
+ int numPortas;
+ char tetoSolar[100];
+ int qtdRodas;
+ int kmRodados;
+ 
+ 
+}Carro1, Carro2, Carro3, Carro4, Carro5;
+
+
+
+int main()
+{
+    
+    Carro1 carro1;
+    Carro2 carro2;
+    Carro3 carro3;
+    Carro4 carro4;
+    Carro5 carro5;
+    
+    strcpy(carro1.modelo, "Fusca");
+    strcpy(carro1.marca, "Volkswagen");
+    carro1.ano = 1938;
+    strcpy(carro1.cor, "Azul");
+    strcpy(carro1.placa, "AAA0000");
+    strcpy(carro1.combustivel, "Gasolina");
+    carro1.numPortas = 2;
+    strcpy(carro1.tetoSolar, "Não");
+    carro1.qtdRodas = 4;
+    carro1.kmRodados = 300000;
+    
+    strcpy(carro2.modelo, "Corsa");
+    strcpy(carro2.marca, "Chevrolet");
+    carro2.ano = 1994;
+    strcpy(carro2.cor, "Vermelho");
+    strcpy(carro2.placa, "AAA1111");
+    strcpy(carro2.combustivel, "Gasolina");
+    carro2.numPortas = 4;
+    strcpy(carro2.tetoSolar, "Não");
+    carro2.qtdRodas = 4;
+    carro2.kmRodados = 200000;
+    
+    strcpy(carro3.modelo, "Camaro");
+    strcpy(carro3.marca, "Chevrolet");
+    carro3.ano = 1966;
+    strcpy(carro3.cor, "Amarelo");
+    strcpy(carro3.placa, "AAA2222");
+    strcpy(carro3.combustivel, "Gasolina");
+    carro3.numPortas = 2;
+    strcpy(carro3.tetoSolar, "Não");
+    carro3.qtdRodas = 4;
+    carro3.kmRodados = 100000;
+    
+    strcpy(carro4.modelo, "Nissan Tiida");
+    strcpy(carro4.marca, "Nissan");
+    carro4.ano = 2004;
+    strcpy(carro4.cor, "Cinza");
+    strcpy(carro4.placa, "AAA3333");
+    strcpy(carro4.combustivel, "Gasolina/Álcool");
+    carro4.numPortas = 4;
+    strcpy(carro4.tetoSolar, "Sim");
+    carro4.qtdRodas = 4;
+    carro4.kmRodados = 50;
+    
+    strcpy(carro5.modelo, "Peugeot 408 Feline");
+    strcpy(carro5.marca, "Peugeot");
+    carro5.ano = 2010;
+    strcpy(carro5.cor, "Cinza");
+    strcpy(carro5.placa, "AAA4444");
+    strcpy(carro5.combustivel, "Gasolina/Álcool");
+    carro5.numPortas = 4;
+    strcpy(carro5.tetoSolar, "Não");
+    carro5.qtdRodas = 4;
+    carro5.kmRodados = 55;
+    
+    
+    printf("\33[40;40m");
+    printf("__________________________________________________________________");
+    printf("\nCARRO 1: ");
+    printf("\nModelo do veículo: %s \nMarca: %s\nAno: %d\nCor: %s\nPlaca: %s\ntipo de combustível: %s\nNúmero de portas: %d\nPossui teto solar? %s\nNúmero de rodas: %d\nKm rodados: %d\n",
+    carro1.modelo, carro1.marca, carro1.ano, carro1.cor, carro1.placa, carro1.combustivel, carro1.numPortas, carro1.tetoSolar, carro1.qtdRodas, carro1.kmRodados);
+    
+
+    printf("__________________________________________________________________");
+    printf("\nCARRO 2: ");
+    printf("\nModelo do veículo: %s \nMarca: %s\nAno: %d\nCor: %s\nPlaca: %s\ntipo de combustível: %s\nNúmero de portas: %d\nPossui teto solar? %s\nNúmero de rodas: %d\nKm rodados: %d\n",
+    carro2.modelo, carro2.marca, carro2.ano, carro2.cor, carro2.placa, carro2.combustivel, carro2.numPortas, carro2.tetoSolar, carro2.qtdRodas, carro2.kmRodados);
+    
+
+    printf("__________________________________________________________________");
+    printf("\nCARRO 3: ");
+    printf("\nModelo do veículo: %s \nMarca: %s\nAno: %d\nCor: %s\nPlaca: %s\ntipo de combustível: %s\nNúmero de portas: %d\nPossui teto solar? %s\nNúmero de rodas: %d\nKm rodados: %d\n",
+    carro3.modelo, carro3.marca, carro3.ano, carro3.cor, carro3.placa, carro3.combustivel, carro3.numPortas, carro3.tetoSolar, carro3.qtdRodas, carro3.kmRodados);
+    
+
+    printf("__________________________________________________________________");
+    printf("\nCARRO 4: ");
+    printf("\nModelo do veículo: %s \nMarca: %s\nAno: %d\nCor: %s\nPlaca: %s\ntipo de combustível: %s\nNúmero de portas: %d\nPossui teto solar? %s\nNúmero de rodas: %d\nKm rodados: %d\n",
+    carro4.modelo, carro4.marca, carro4.ano, carro4.cor, carro4.placa, carro4.combustivel, carro4.numPortas, carro4.tetoSolar, carro4.qtdRodas, carro4.kmRodados);
+    
+
+    printf("__________________________________________________________________");
+    printf("\nCARRO 5: ");
+    printf("\nModelo do veículo: %s \nMarca: %s\nAno: %d\nCor: %s\nPlaca: %s\ntipo de combustível: %s\nNúmero de portas: %d\nPossui teto solar? %s\nNúmero de rodas: %d\nKm rodados: %d\n",
+    carro5.modelo, carro5.marca, carro5.ano, carro5.cor, carro5.placa, carro5.combustivel, carro5.numPortas, carro5.tetoSolar, carro5.qtdRodas, carro5.kmRodados);
+
+    return 0;
+}
+
+// Arthur Oliveira Silva
+
+
