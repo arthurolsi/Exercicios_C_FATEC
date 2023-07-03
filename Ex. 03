@@ -2,6 +2,7 @@
 
 /* 3) Escreva um programa que coloque na tela meia arvore de natal com asteriscos.
 O numero de ramos deverá ser introduzido pelo usuário */
+// Atividade realizada em 10/05/2022
 
 int main()
 {
