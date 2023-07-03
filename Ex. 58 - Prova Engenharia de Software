@@ -1,0 +1,262 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// HOTEL
+// Atividade realizada em 16/04/2023
+
+int escolhaQuarto = 0;
+int EquartoSolteiro = 0;
+int EquartoCasal = 0;
+int EquartoDeluxe = 0;
+int escolhaComida = 0;
+float total = 0;
+int noites = 0;
+int reservou = 0;
+
+typedef struct
+{
+  char nome[100];
+  int idade;
+  char cpf[11];
+  int celular;
+
+}Hospede;
+
+/**/
+
+typedef struct
+{
+  int numQuarto;
+  float precoNoite;
+  float precoManutencao;
+
+}QuartoSolteiro;
+
+ /**/
+
+typedef struct
+{
+  int numQuarto;
+  float precoNoite;
+  float precoManutencao;
+
+}QuartoCasal;
+
+ /**/
+
+typedef struct
+{
+  int numQuarto;
+  float precoNoite;
+  float precoManutencao;
+
+}QuartoDeluxe;
+
+/**/
+
+typedef struct{
+    char nome[100];
+    float preco;
+    int qtd;
+}Refrigerante, Coxinha, Brigadeiro;
+
+/**/
+
+int main ()
+{
+    QuartoSolteiro quartosolteiro;
+    QuartoCasal quartocasal;
+    QuartoDeluxe quartodeluxe;
+    Hospede hospede;
+    
+    quartosolteiro.numQuarto = 1;
+    quartosolteiro.precoNoite = 50;
+    quartosolteiro.precoManutencao = 15;
+    
+    quartocasal.numQuarto = 2;
+    quartocasal.precoNoite = 100;
+    quartocasal.precoManutencao = 30;
+    
+    quartodeluxe.numQuarto = 3;
+    quartodeluxe.precoNoite = 5000;
+    quartodeluxe.precoManutencao = 500;
+    
+    Refrigerante refrigerante;
+    Coxinha coxinha;
+    Brigadeiro brigadeiro;
+    
+    refrigerante.preco = 13;
+    coxinha.preco = 140;
+    brigadeiro.preco = 5;
+    
+    void VerificarQuartos(){
+    printf("\nQuarto Solteiro:\n Número: %d\n", quartosolteiro.numQuarto);
+    printf(" Preço por noite: %.2f\n", quartosolteiro.precoNoite);
+    printf(" Taxa de manutenção: %.2f\n", quartosolteiro.precoManutencao);
+    
+    printf("\nQuarto Casal:\n Número: %d\n", quartocasal.numQuarto);
+    printf(" Preço por noite: %.2f\n", quartocasal.precoNoite);
+    printf(" Taxa de manutenção: %.2f\n", quartocasal.precoManutencao);
+    
+    printf("\nQuarto Deluxe:\n Número: %d\n", quartodeluxe.numQuarto);
+    printf(" Preço por noite: %.2f\n", quartodeluxe.precoNoite);
+    printf(" Taxa de manutenção: %.2f\n", quartodeluxe.precoManutencao);
+    }
+    
+    void ReservarQuarto(){
+        printf("Qual quarto deseja reservar?\n");
+        if(EquartoSolteiro == 1 && EquartoCasal == 1 && EquartoDeluxe == 1){
+            printf("Ops... Não há quartos disponíveis no momento ");
+            escolhaQuarto = 4;
+        }
+        if(EquartoSolteiro != 1){
+            printf("\n1 - Quarto Solteiro | ");
+        }
+        if(EquartoCasal != 1){
+            printf("2 - Quarto Casal | ");
+        }
+        if(EquartoDeluxe != 1){
+            printf("3 - Quarto Deluxe | ");
+        }
+        
+        printf("4 - Cancelar \n");
+        scanf("%d", &escolhaQuarto);
+        
+        if(escolhaQuarto != 4){
+            printf("\nPor quantas noites pretende reservar? ");
+            scanf("%d", &noites);
+            
+            if (escolhaQuarto == 1){
+                EquartoSolteiro = 1;
+            }
+            else if(escolhaQuarto == 2){
+                EquartoCasal = 1;
+            }
+            else{
+                EquartoDeluxe = 1;
+            }
+        }
+        
+        switch(escolhaQuarto){
+            case 1: 
+            total = total + (quartosolteiro.precoNoite * noites) + quartosolteiro.precoManutencao;
+            EquartoSolteiro = 1;
+            break;
+            
+            case 2: 
+            total = total + (quartocasal.precoNoite * noites) + quartocasal.precoManutencao;
+            EquartoCasal = 1;
+            break;
+            
+            case 3: 
+            total = total + (quartodeluxe.precoNoite * noites) + quartodeluxe.precoManutencao;
+            EquartoDeluxe = 1;
+            break;
+            
+            case 4:
+            break;
+        }
+        system("clear");
+    }
+    
+    void VerConta(){
+        printf("O valor está em: %.2f\n", total);
+    }
+    
+    void Comanda(){
+        printf("O que deseja escolher? \n1 - Refrigerante 2L (R$: 13,00)| 2 - Coxinha 5kg (R$: 140,00) | 3 - Brigadeiro (R$: 5,00) | 4 - Cancelar\n");
+        scanf("%d", &escolhaComida);
+        
+        
+        switch(escolhaComida){
+            case 1: 
+            printf("\nInforme a quantidade ");
+            scanf("%d", &refrigerante.qtd);
+            total = total + (refrigerante.preco * refrigerante.qtd);
+            system("clear");
+            break;
+            
+            case 2: 
+            printf("\nInforme a quantidade ");
+            scanf("%d", &coxinha.qtd);
+            total = total + (coxinha.preco * coxinha.qtd);
+            system("clear");
+            break;
+            
+            case 3:
+            printf("\nInforme a quantidade ");
+            scanf("%d", &brigadeiro.qtd);
+            total = total + (brigadeiro.preco * brigadeiro.qtd);
+            system("clear");
+            break;
+            
+            case 4: 
+            escolhaComida = 0;
+            system("clear");
+            break;
+            
+            default: printf("Opção inválida");
+        }
+
+    }
+    
+    int menu;
+    
+    printf("Bem Vindo(a) ao BOB HOTEL! ඞ\nRua US.Among - Tel 4002-8922\n\nPara começar, informe seu nome ");
+    scanf("%s", hospede.nome);
+    printf("Informe sua idade ");
+    scanf("%d", &hospede.idade);
+    printf("Informe seu CPF ");
+    scanf("%s", hospede.cpf);
+    
+    if(hospede.idade < 18){
+        printf("É necessário ser maior de idade para utilizar o sistema");
+        return 0;
+    }
+    
+    while(menu != 5){
+        
+        printf("------------------------------------------------------------------------\n");
+        printf("\33[40;40m");
+        printf("Selecione o que deseja:\n");
+        printf(" 1 - Verificar Quartos\n 2 - Reservar Quarto\n 3 - Restaurante\n 4 - Ver Conta\n 5 - Sair\n");
+        printf("\33[0;0m");
+        printf("------------------------------------------------------------------------\n");
+        scanf("%d", &menu);
+        system("clear");
+        
+        
+        switch(menu){
+            case 1: VerificarQuartos();
+            break;
+            
+            case 2: ReservarQuarto();
+            break;
+            
+            case 3: 
+            if(EquartoSolteiro == 1 || EquartoCasal == 1 || EquartoDeluxe == 1){
+                reservou = 1;
+            }
+            if(reservou == 1){
+                Comanda();
+            }
+            else{
+                printf("Só é possível acessar o restaurante quando pelo menos um quarto está reservado\n");
+            }
+            break;
+            
+            case 4: VerConta();
+            
+            break;
+            
+            case 5: return 0;
+            break;
+            
+            default: printf("Opção inválida");
+        }
+    }
+  return 0;
+}
+
+
