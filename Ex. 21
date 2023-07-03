@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// REGISTROS
+  // Atividade realizada em 01/06/2022
+
+struct AGENDA{
+    char nome;
+    int idade;
+};
+
+int main()
+{
+    struct AGENDA agenda1;
+    
+    
+    printf("Digite um nome\n");
+    scanf("%c", &agenda1.nome);
+        
+    printf("Digite a idade\n");
+    scanf("%d", &agenda1.idade);
+
+    return 0;
+}
+
