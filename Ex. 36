@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+// Positivo negativo par impar
+// Atividade realizada em 27/02/2023
+
+int main()
+{
+    int v;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &v);
+    
+    if(v>=0){
+        printf("%d é positivo! \n", v);
+    }
+    else {
+        printf("%d é negativo! \n", v);
+    }
+    
+    if(v % 2==0){
+        printf("%d é par! \n", v);
+    }
+    else {
+        printf("%d é ímpar! \n", v);
+    }
+
+    return 0;
+}
+
