@@ -1,1 +1,22 @@
-teste
+#include <stdio.h>
+
+// 4)Faça um programa que dado um valor de salário apresente um aumento de 10%
+
+int main()
+{
+    int salario, resultado, aumento;
+    
+    printf("Informe o salário \n");
+    scanf("%d", &salario);
+    
+    aumento = salario * 0.10;
+    resultado = salario + aumento;
+    printf("O salario com um aumento de 10 por cento é: \n");
+    printf("%d", resultado);
+
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
