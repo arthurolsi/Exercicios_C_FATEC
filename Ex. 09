@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+// Iniciando a aula de Modulariazação
+
+void linha(int valor){    // function
+    int i;
+    for (i = 1; i <= valor; i++){
+        putchar('*');
+    }
+    putchar('\n');
+    return;
+}
+
+int main()
+{
+    int i;
+    
+    /*for (i = 1; i <= 20; i++){
+        putchar('*');
+    }
+    
+    putchar('\n');*/
+    
+    linha(4);
+    
+    puts("Números entre 1 e 5");
+    
+    /*for (i = 1; i <= 20; i++){
+        putchar('*');
+    }
+    putchar('\n');*/
+    
+    linha(5);
+    
+    for(i = 1; i <= 5; i++){
+        printf("%d\n", i);
+    }
+    
+    /*for (i = 1; i <= 20; i++){
+        putchar('*');
+    }
+    putchar('\n');*/
+    
+    linha(20);
+    
+
+    return 0;
+}
+
