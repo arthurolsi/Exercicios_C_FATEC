@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Média, aumento e divisão
-    // Atividade realizada em 01/06/2022
+// Atividade realizada em 01/06/2022
 
 
 float calcularMedia(float a, float b){
