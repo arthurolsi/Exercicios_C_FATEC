@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+//Teste Inter
+// Atividade realizada em 13/05/2023
+
+int main()
+{
+    int N;
+    int i;
+    scanf("%d", &N);
+    float vetorA[N];
+    
+    
+    for (i = 0; i < N; i++){
+        scanf("%f", &vetorA[i]);
+    }
+    
+    for (i = 0; i < N; i++){
+        printf("resposta %d: %.0f\n", i+1, vetorA[i]);
+    }
+
+    return 0;
+}
+
