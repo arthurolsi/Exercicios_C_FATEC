@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+
+// Frutas 2
+// Atividade realizada em 06/03/2023
+
+int main()
+
+{
+    int fruta;
+    bool invalido = true;
+    printf("Informe o código da fruta: ");
+    scanf("\n %d", &fruta);
+
+
+    switch(fruta)
+    {
+    case 1:
+        printf("Maçã\nR$100,00\n");
+        invalido = false;
+        break;
+    case 2:
+        printf("Pêssego\nR$50,00\n");
+        invalido = false;
+        break;
+    case 3:
+        printf("Laranja\nR$1,99\n");
+        invalido = false;
+        break;
+    case 4:
+        printf("Melancia\nR$5,98\n");
+        invalido = false;
+        break;
+    case 5:
+        printf("Abacaxi\nR$500,00\n");
+        invalido = false;
+        break;
+    case 6:
+        printf("Maracujá\nR$250,00\n");
+        invalido = false;
+        break;
+    case 7:
+        printf("Mamão\nR$120,00\n");
+        invalido = false;
+        break;
+    case 8:
+        printf("Abacate\nR$10,00\n");
+        invalido = false;
+        break;
+    case 9:
+        printf("Tomate\nR$1000,00\n");
+        invalido = false;
+        break;
+    default:
+        break;
+    }
+    
+    if (invalido == true){
+        printf("Inválido!");
+    }
+
+    return 0;
+}
