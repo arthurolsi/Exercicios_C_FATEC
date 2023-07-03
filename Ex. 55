@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Inserir dados em struct
+// Atividade realizada em 27/03/2023
+
+typedef struct{
+ char nome[100];
+ int idade;
+ 
+}Aluno;
+
+
+
+
+int main()
+{
+    Aluno aluno;
+    
+    printf("Digite o nome do aluno: ");
+    scanf("%s", aluno.nome);
+    printf("Informe a idade do aluno: ");
+    scanf("%d", &aluno.idade);
+    
+    printf("O nome do aluno digitado foi: %s\n", aluno.nome);
+    printf("A idade do aluno informada foi: %d\n", aluno.idade);
+
+    return 0;
+}
+
