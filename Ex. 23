@@ -3,7 +3,7 @@
 
 
 // Continuação da anterior
-    // Atividade realizada em 01/06/2022
+// Atividade realizada em 01/06/2022
 
 struct BANCO{
     char titular[35];
