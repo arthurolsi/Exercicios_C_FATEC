@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+// Comparação
+// Atividade realizada em 27/02/2023
+
+int main()
+{
+    int x, y;
+    
+    printf("Informe um número \n");
+    scanf("%d",&x);
+    
+    printf("Informe mais um número \n");
+    scanf("%d",&y);
+    
+    if (x > y){
+        printf("%d", x);
+        printf(" é o maior! \n");
+    }
+    else if (x == y){
+        printf("São iguais! \n");
+    }
+    else{
+        printf("%d", y);
+        printf(" é o maior! \n");
+    }
+
+    return 0;
+}
+
+
