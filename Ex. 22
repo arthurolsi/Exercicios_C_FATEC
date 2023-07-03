@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+// Continuação do anterior
+    // Atividade realizada em 01/06/2022
+
+int main()
+{
+    char nome[] = {'P', 'R', 'O'};
+    char nome1[] = "PROG";
+
+    char vet1[10];
+    strcpy(vet1, "Programa");
+
+
+    char vet2[10];
+    gets(vet2); // permite colocar na variável que recebe por parâmetro, todos os caracteres introduzidos
+
+    puts(nome);
+    //Função puts: coloca na tela a string passado à função e,
+    puts(nome1);
+    puts(vet1);
+    puts(vet2);
+
+    return 0;
+}
+
