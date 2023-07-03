@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+
+
+// Continuação da anterior
+    // Atividade realizada em 01/06/2022
+
+struct BANCO{
+    char titular[35];
+    int num;
+    float saldo;
+};
+
+int main()
+{
+    struct BANCO contas [4][3];
+    int i = 0;
+    
+    for (i = 0; i < 4; i++){
+        printf("\n");
+        printf("Digite o nome do titular da conta: ");
+        gets(contas[i][1].titular); // no i tava cont
+        
+        printf("Digite o número da conta: ");
+        scanf("%d%*c", &contas[i][2].num);
+        
+        printf("Digite o saldo da conta: ");
+        scanf("%f%*c", &contas[i][3].saldo);
+    }
+
+    return 0;
+}
+
+
