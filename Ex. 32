@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+// Teste T
+// Atividade realizada em 27/02/2023
+
+int main()
+{
+    char sexo;
+    
+    printf("Informe o sexo (M/F) \n");
+    scanf("%c",&sexo);
+    
+    if (sexo != 'M' && sexo != 'F'){
+        printf("Sexo inválido...");
+    }
+    else{
+        printf("Sexo válido!");
+    }
+}
+
+
