@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+// salário
+// Atividade realizada em 27/02/2023
+
+int main()
+{
+    int nivel, horas, res;
+    
+    printf("Digite o nível do professor: ");
+    scanf("%d", &nivel);
+    printf("Digite a quantidade de horas trablhadas: ");
+    scanf("%d", &horas);
+    
+    if(nivel == 1){
+        res = 12*horas;
+    }
+    else if(nivel == 2){
+        res = 17*horas;
+    }
+    else {
+        res = 25*horas;
+    }
+    
+    printf("O salário total é: %d", res);
+    
+    return 0; 
+}
+
