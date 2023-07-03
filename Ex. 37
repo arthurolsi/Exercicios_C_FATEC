@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+// Notas
+// Atividade realizada em 28/02/2023
+
+int main()
+{
+    float nota1, nota2, nota3, media;
+    char materia[20];
+    
+    
+    printf("Digite o nome da matéria \n");
+    scanf("%s", materia);
+    
+    printf("Informe a primeira nota \n");
+    scanf("%f",&nota1);
+    
+    printf("Informe a segunda nota \n");
+    scanf("%f",&nota2);
+    
+    printf("Informe a terceira nota \n");
+    scanf("%f",&nota3);
+    
+    media = (nota1 + nota2 + nota3) / 3;
+    printf("A média da matéria %s fechou em: %.2f", materia, media);
+    
+    if (media >= 7){
+        printf(" -> Aprovado");
+    }
+    else if (media <= 4){
+        printf(" -> Reprovado");
+    }
+    else{
+        printf(" -> Recuperação");
+    }
+
+    return 0;
+}
+
+
+
