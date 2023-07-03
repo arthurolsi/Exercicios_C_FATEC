@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 1) Fazer um programa que calcule a soma e o produto dos n primeiros números naturais
+// Atividade realizada em 10/05/2022
 
 int main()
 {
