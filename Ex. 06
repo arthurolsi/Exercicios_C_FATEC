@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /* 1) Dado um numero apresentar a tabuada do mesmo */
+// Atividade realizada em 11/05/2022
 
 int main()
 {
