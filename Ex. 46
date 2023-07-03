@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+// Desafio matriz 1.1
+// Atividade realizada em 06/03/2023
+
+int main()
+{
+    char matriz [10][10];
+    int contador1 = 0;
+    int contador2 = 0;
+    
+    for(contador1 = 0; contador1 <= 9; contador1++){
+        for(contador2 = 0; contador2 <= 9; contador2++){
+           matriz[contador1][contador2] = '-'; 
+        }
+    }
+    
+    matriz[1][2]='X';
+    matriz[1][3]='X';
+    matriz[1][4]='X';
+    matriz[1][5]='X';
+    matriz[1][6]='X';
+    matriz[1][7]='X';
+    
+    
+    
+    for(contador1 = 0; contador1 <= 9; contador1++){
+        for(contador2 = 0; contador2 <= 9; contador2++){
+           printf("%c",matriz[contador1][contador2]); 
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
