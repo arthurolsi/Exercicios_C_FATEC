@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+// Fibonacci com função recursiva
+// Atividade realizada em 01/06/2022
+
+int result, a, b, limite;
+
+int calcularFibonacci(int i)
+{
+    if (i == 1 || i == 2)
+        return 1;
+    result = (calcularFibonacci(i - 1) + calcularFibonacci(i - 2));
+    return result;
+}
+
+int main(){
+    printf("Informe o número limite \n");
+    scanf("%d", &limite);
+
+    for (a = 1; a <= limite; a++) {
+    printf("%d ", calcularFibonacci(a));
+  }
+  printf("\n");
+  return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
