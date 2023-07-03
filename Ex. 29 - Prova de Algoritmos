@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <string.h>
+
+// Prova - LANCHONETE
+// Atividade realizada em 15/06/2022
+
+struct LANCHONETE{
+    int qtdEstoque;
+    int qtdMinima;
+    float valorUnitario;
+};
+
+int main()
+{
+    struct LANCHONETE produtos [6][3];
+    int i = 0, contador = 0;
+    char descProduto[6] = {'P','A','T','Q','H','N'};
+
+    for (i = 0; i < 6; i++){
+        printf("\n");
+        printf("Digite a quantidade em estoque do produto : ");
+        printf("%c --> ", descProduto[i]);
+        scanf("%d%*c", &produtos[i][1].qtdEstoque);
+
+        printf("Digite a quantidade mínima exigida do produto : ");
+        printf("%c --> ", descProduto[i]);
+        scanf("%d%*c", &produtos[i][2].qtdMinima);
+
+        printf("Digite o valor unitário do produto : ");
+        printf("%c --> ", descProduto[i]);
+        scanf("%f%*c", &produtos[i][3].valorUnitario);
+    }
+
+    for (i = 0; i < 6; i++){
+        for (contador = 0; contador < 3; contador++){
+            printf(" %d ", produtos[i][contador]);
+        }
+        printf("\n");
+    }
+
+    // printf("%f", produtos[1][1].qtdEstoque);
+
+    /*for (i = 0; i < 6; i++){
+        printf(" %d ", produtos[i][i]);
+    }*/
+
+    return 0;
+}
+
