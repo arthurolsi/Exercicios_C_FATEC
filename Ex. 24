@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+// Média, aumento e divisão
+    // Atividade realizada em 01/06/2022
+
+
+float calcularMedia(float a, float b){
+    float result = (a + b) / 2;
+    return result;
+}
+
+float calcularAumento(float valor, float porcentagem){
+    float result = valor + (valor * (porcentagem / 100));
+    return result;
+}
+
+float divisivelPorSeis(int d){
+    if (d % 2 == 0){
+        if (d % 6 == 0){
+            printf("É divisível por 6\n");
+        }
+        else{
+            printf("A soma dos algorismos não é divisível por 3, então não pode ser divisível por 6\n");
+        }
+    }
+    else{
+        printf("O número não é par, então não pode ser divisível por 6\n");
+    }
+}
+
+int main()
+{
+    float a, b, x, y, z, valor, porcentagem;
+    int d, escolha, escolha2 = 1;
+    
+    // -- //
+    
+    while (escolha2 == 1){
+        printf("Digite 1 para calcular a média\nDigite 2 para calcular um aumento\nDigite 3 para ver se um número é divisivel por 6\n");
+        scanf("%d", &escolha);
+        
+        if (escolha == 1){
+        printf("Digite dois valores para calcular a média\n");
+        scanf("%f %f", &a, &b);
+        x = calcularMedia(a, b);
+        printf("\nA média é: %.2f\n", x); 
+        }
+        else if(escolha == 2){
+            printf("\nDigite uma valor e uma porcentagem (apenas números) para calcular um aumento\n");
+            scanf("%f %f", &valor, &porcentagem);
+            y = calcularAumento(valor, porcentagem);
+            printf("\nO novo valor é de: %.2f", y);
+        }
+        else if (escolha == 3){
+            printf("\nInforme um número inteiro para ver se o mesmo é divisivel por 6\n");
+            scanf("%d", &d);
+            z = divisivelPorSeis(d);
+        }
+        else{
+            printf("Valor inválido\n");
+        }
+        printf(" - Digite 1 para continuar e 2 para sair\n");
+        scanf("%d", &escolha2);
+    }
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
