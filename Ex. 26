@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+// Somar elementos de duas matrizes
+// Atividade realizada em 01/06/2022
+
+int main()
+{
+    int matrizA[2][2], matrizB[2][2], matrizC[2][2], i, contador2;
+    
+    
+    // INSERIR
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        printf("Digite um número para a matriz A, posição\n");
+        printf("%d", i + 1);
+        printf(" - ");
+        printf("%d\n", contador2 + 1);
+        scanf("%d",&matrizA[i][contador2]);
+        }
+    }
+    
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        printf("Digite um número para a matriz B, posição\n");
+        printf("%d", i + 1);
+        printf(" - ");
+        printf("%d\n", contador2 + 1);
+        scanf("%d",&matrizB[i][contador2]);
+        }
+    }
+    
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        matrizC[i][contador2] = matrizA[i][contador2] + matrizB[i][contador2];
+        }
+    }
+    
+    // ESCREVER
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        printf(" %d ",matrizA[i][contador2]);
+        }
+    printf("\n");
+    }
+    
+    printf("\n +\n");
+    
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        printf(" %d ",matrizB[i][contador2]);
+        }
+    printf("\n");
+    }
+    
+    printf("\n =\n");
+    
+    for(i = 0; i < 2; i++){
+        for(contador2 = 0; contador2 < 2; contador2++){
+        printf(" %d ",matrizC[i][contador2]);
+        }
+    printf("\n");
+    }
+    return 0;
+}
+
+/* Arthur Oliveira Silva
+    1 ADS - Fatec Guarulhos */
+
+
