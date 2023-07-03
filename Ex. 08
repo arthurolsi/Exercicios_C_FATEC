@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // 3) Desenvolva um algoritmo que calcule e exiba a soma dos mil primeiros números inteiros
+// Atividade realizada em 11/05/2022
 
 int main()
 {
