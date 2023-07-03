@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Par-Impar vetor
+// Atividade realizada em 18/05/2022
 
 int main()
 {
