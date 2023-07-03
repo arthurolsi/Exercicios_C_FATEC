@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Proposta: Calcular o imposto de renda retido na fonte(IRRF)mensalmente de um grupo de contribuintes
-    // Atividade realizada em 19/05/2022
+// Atividade realizada em 19/05/2022
 
 int main()
 {
