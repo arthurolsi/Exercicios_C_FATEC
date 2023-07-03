@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+// Estudo sobre o selectionSort
+// Atividade realizada em 18/05/2023
+
+void selectionSort(int vetor[], int tamanhoVetor) {
+  int i, j, min, aux;
+  
+  for (i = 0; i < (tamanhoVetor - 1); i++) {
+    min = i;
+    // Define o primeiro elemento como mínimo
+    for (j = i+1; j < tamanhoVetor; j++) {
+      // Se existir algum número menor, ele faz a troca do minimo
+      if (vetor[j] < vetor[min]) {
+   min = j;
+      }
+    }
+    // Caso o mínimo seja diferente do primeiro numero não ordenado, ele realiza a troca para ordena-los
+    if (i != min) {
+      aux = vetor[i];
+      vetor[i] = vetor[min];
+      vetor[min] = aux;
+    }
+  }
+  // Imprime os dados do vetor
+  for (i = 0; i < tamanhoVetor; i++) {
+    printf ("%d ",vetor[i]);
+  }
+  printf ("\n");
+}
+
+
+int main () {
+  int tamanhoVetor, i;
+
+  scanf ("%d",&tamanhoVetor);
+  
+  int  vetor[tamanhoVetor];
+  
+  // Recebe os dados no vetor
+  for (i = 0; i < tamanhoVetor; i++) {
+    scanf ("%d",&vetor[i]);
+  }
+  
+  selectionSort(vetor, tamanhoVetor);
+  
+}
+
